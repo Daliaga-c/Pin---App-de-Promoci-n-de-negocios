@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Pin---App-de-Promoci-n-de-negocios")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d63f4bf9b0ebd5b10c89cde3e77dd45ba9419ce2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a521a740970b73bb34c6998f1392b6bff1bf894d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Pin---App-de-Promoci-n-de-negocios")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Pin---App-de-Promoci-n-de-negocios")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
