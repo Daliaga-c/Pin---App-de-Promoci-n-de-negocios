@@ -1,63 +1,94 @@
+@model IEnumerable<dynamic> @* O el modelo que estés usando en el Controller *@
+
 @{
     ViewData["Title"] = "Explorar Negocios";
 }
 
-<div class="max-w-7xl mx-auto py-8 px-4 flex gap-8">
+<div class="max-w-7xl mx-auto py-8 px-4 flex flex-col md:flex-row gap-8 bg-gray-50">
     
-    <aside class="w-1/4 hidden lg:block bg-white p-6 rounded-xl shadow-sm h-fit">
-        <h2 class="text-xl font-bold text-gray-800 mb-6">Filtros</h2>
+    <aside class="w-full md:w-1/4 bg-white p-6 rounded-xl shadow-sm h-fit border border-gray-100">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-bold text-gray-800">Filtros</h2>
+            <a href="@Url.Action("Body", "Home")" class="text-blue-500 text-sm hover:underline">Limpiar</a>
+        </div>
 
-        <form method="get" action="@Url.Action("Index", "Negocios")">
+        <form method="get">
             <div class="mb-6">
-                <label class="text-xs font-bold text-gray-400 uppercase">Búsqueda Directa</label>
-                <input type="text" name="search" placeholder="Ej. Cevichería..." class="w-full mt-2 p-2 bg-gray-50 border rounded-lg outline-none">
-            </div>
-
-            <div class="mb-6">
-                <label class="text-xs font-bold text-gray-400 uppercase">Categorías</label>
-                <div class="mt-3 space-y-2 text-gray-700">
-                    <label class="flex items-center gap-2"><input type="checkbox" name="cat" value="rest" checked class="accent-orange-700"> Restaurantes</label>
-                    <label class="flex items-center gap-2"><input type="checkbox" name="cat" value="tienda"> Tiendas</label>
-                    <label class="flex items-center gap-2"><input type="checkbox" name="cat" value="serv"> Servicios</label>
+                <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Búsqueda Directa</label>
+                <div class="relative mt-2">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-gray-400"></i>
+                    <input type="text" name="q" placeholder="Ej. Cevichería..." 
+                           class="w-full pl-10 p-2 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 outline-none transition-all">
                 </div>
             </div>
 
-            <button type="submit" class="w-full bg-orange-700 text-white py-2 rounded-lg font-bold">Aplicar Filtros</button>
+            <div class="mb-6">
+                <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Categorías</label>
+                <div class="mt-3 space-y-3 text-sm text-gray-600">
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" checked class="w-4 h-4 rounded border-gray-300 text-orange-700 focus:ring-orange-500"> 
+                        Restaurantes
+                    </label>
+                    <label class="flex items-center gap-3 cursor-pointer">
+                        <input type="checkbox" class="w-4 h-4 rounded border-gray-300 text-orange-700 focus:ring-orange-500"> 
+                        Tiendas
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit" class="w-full bg-[#A13D2D] hover:bg-red-900 text-white py-2.5 rounded-lg font-bold transition-colors shadow-md">
+                Aplicar Filtros
+            </button>
         </form>
     </aside>
 
     <section class="flex-1">
         <div class="flex justify-between items-center mb-6">
-            <p class="text-gray-600">Mostrando <span class="text-red-700 font-bold">12 negocios</span> en Miraflores</p>
+            <p class="text-gray-500">Mostrando <span class="text-[#A13D2D] font-bold">12 negocios</span> en Miraflores</p>
+            <select class="bg-transparent text-sm font-bold text-gray-700 outline-none cursor-pointer">
+                <option>Relevancia</option>
+                <option>Calificación</option>
+            </select>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
             
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-                <div class="relative h-48 bg-gray-200">
-                    <img src="~/images/picanteria.jpg" alt="Local" class="w-full h-full object-cover">
-                    <span class="absolute top-3 left-3 bg-orange-100 text-orange-800 text-[10px] font-bold px-2 py-1 rounded uppercase">Destacado</span>
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-all duration-300 group">
+                <div class="relative h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=500" 
+                         alt="Restaurante" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-orange-100 text-[#A13D2D] text-[10px] font-extrabold px-3 py-1 rounded-full uppercase shadow-sm">Destacado</span>
                 </div>
                 
-                <div class="p-5">
+                <div class="p-6">
                     <div class="flex justify-between items-start">
                         <div>
-                            <span class="text-blue-500 text-[10px] font-bold uppercase">Restaurantes</span>
-                            <h3 class="font-bold text-lg text-gray-800 mt-1">La Picantería del Sur</h3>
+                            <span class="text-blue-500 text-[10px] font-bold uppercase tracking-widest">Restaurantes</span>
+                            <h3 class="font-bold text-xl text-gray-800 mt-1">La Picantería del Sur</h3>
                         </div>
-                        <div class="flex items-center gap-1 bg-orange-50 px-2 py-1 rounded text-orange-700 font-bold text-sm">
-                            <i class="fa-solid fa-star"></i> 4.8
+                        <div class="flex items-center gap-1 bg-orange-50 px-2.5 py-1 rounded-lg text-orange-700 font-bold text-sm">
+                            <i class="fa-solid fa-star text-xs"></i> 4.8
                         </div>
                     </div>
                     
-                    <p class="text-gray-500 text-sm mt-2">
-                        <i class="fa-solid fa-location-dot mr-1"></i> Av. Larco 1230, Miraflores
-                    </p>
-                    <p class="text-green-600 text-xs font-semibold mt-1">Abierto</p>
+                    <div class="mt-4 space-y-2">
+                        <p class="text-gray-500 text-sm flex items-center gap-2">
+                            <i class="fa-solid fa-location-dot text-red-400"></i> Av. Larco 1230, Miraflores
+                        </p>
+                        <p class="text-green-600 text-xs font-bold flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> Abierto ahora
+                        </p>
+                    </div>
 
                     <div class="mt-6 flex gap-3">
-                        <a href="@Url.Action("Detalles", "Negocios", new { id = 1 })" class="flex-1 bg-[#A13D2D] text-white py-2 rounded-lg font-bold text-center">Ver perfil</a>
-                        <button class="flex-1 bg-gray-100 text-blue-900 py-2 rounded-lg font-bold">Ruta</button>
+                        @* Ajusta "Detalles" y "Negocios" a tus nombres reales de Action y Controller *@
+                        <a href="@Url.Action("Index", "Home")" class="flex-1 bg-[#A13D2D] hover:bg-red-900 text-white py-2.5 rounded-xl font-bold text-center transition-colors shadow-sm">
+                            Ver perfil
+                        </a>
+                        <button class="flex-1 bg-gray-50 hover:bg-gray-100 text-[#1a2e44] py-2.5 rounded-xl font-bold border border-gray-200 transition-colors">
+                            <i class="fa-solid fa-route mr-1"></i> Ruta
+                        </button>
                     </div>
                 </div>
             </div>
