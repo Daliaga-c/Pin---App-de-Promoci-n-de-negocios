@@ -95,4 +95,4 @@ D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios\obj\Debug\net10.0\ref
 D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios\obj\Debug\net10.0\Pin---App-de-Promoci-n-de-negocios.pdb
 D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios\obj\Debug\net10.0\Pin---App-de-Promoci-n-de-negocios.genruntimeconfig.cache
 D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios\obj\Debug\net10.0\ref\Pin---App-de-Promoci-n-de-negocios.dll
-D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios\obj\Debug\net10.0\compressed\q8rws5tm62-{0}-chclq9zqxr-chclq9zqxr.gz
+D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios\obj\Debug\net10.0\compressed\q8rws5tm62-{0}-fo2sfanvzq-fo2sfanvzq.gz
