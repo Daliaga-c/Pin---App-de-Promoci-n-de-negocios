@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Pin___App_de_Promoci_n_de_negocios
+build_property.RootNamespace = Pin___App_de_Promoci_n_de_negocios
+build_property.ProjectDir = D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Programación 2026-1\Pin---App-de-Promoci-n-de-negocios
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSAyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSAzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSA0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSA1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 6.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSA2LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 7.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSA3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 8.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSA4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy 9.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weSA5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1 copy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEgY29weS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Home/Vista1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaXN0YTEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Programación 2026-1/Pin---App-de-Promoci-n-de-negocios/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-c5trl3odib
