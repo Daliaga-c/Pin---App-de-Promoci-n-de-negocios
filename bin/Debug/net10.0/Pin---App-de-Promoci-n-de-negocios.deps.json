@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Pin---App-de-Promoci-n-de-negocios/1.0.0": {
+        "runtime": {
+          "Pin---App-de-Promoci-n-de-negocios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pin---App-de-Promoci-n-de-negocios/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

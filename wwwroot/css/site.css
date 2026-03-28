@@ -29,3 +29,90 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+/* ============================================
+   NAVBAR STYLES
+   ============================================ */
+
+.navbar {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #e74c3c;
+  letter-spacing: -1px;
+}
+
+.nav-menu-item {
+  color: #333 !important;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-menu-item:hover {
+  color: #e74c3c !important;
+}
+
+.nav-login {
+  color: #666 !important;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-login:hover {
+  color: #e74c3c !important;
+}
+
+.btn-registro {
+  background-color: #c1440e;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-registro:hover {
+  background-color: #a83709;
+  color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-menu-item {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+  }
+
+  .d-flex.align-items-center {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .nav-login {
+    padding-top: 0.75rem;
+  }
+
+  .btn-registro {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.75rem;
+  }
+}
