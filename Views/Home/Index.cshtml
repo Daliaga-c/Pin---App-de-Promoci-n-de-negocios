@@ -1,8 +1,42 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero-section">
+    <div class="container hero-content">
+        <span class="hero-badge">DESCUBRE LO LOCAL</span>
+        <h1>Descubre lo mejor de tu <span class="hero-accent">distrito</span></h1>
+        <p>Conectamos el corazón de los negocios peruanos con la comunidad. Encuentra desde la mejor gastronomía hasta servicios especializados cerca de ti.</p>
+
+        <form class="hero-search" role="search" method="get" action="#">
+            <div class="hero-search-input">
+                <span class="icon">🔍</span>
+                <input type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="Buscar" />
+            </div>
+            <div class="hero-search-input">
+                <span class="icon">📍</span>
+                <input type="text" name="district" placeholder="Distrito" aria-label="Distrito" />
+            </div>
+            <button type="submit" class="btn btn-search">Buscar →</button>
+        </form>
+    </div>
+</section>
+
+<section class="categories-section">
+    <div class="container">
+        <div class="categories-header">
+            <h2>Explora por categorías</h2>
+            <a class="link-view-all" href="#">Ver todas →</a>
+        </div>
+
+        <div class="category-chip-grid">
+            <a class="category-chip" href="#">Todos</a>
+            <a class="category-chip" href="#">Restaurantes</a>
+            <a class="category-chip" href="#">Tiendas</a>
+            <a class="category-chip" href="#">Servicios</a>
+            <a class="category-chip" href="#">Salud</a>
+            <a class="category-chip" href="#">Educación</a>
+            <a class="category-chip" href="#">Belleza</a>
+        </div>
+    </div>
+</section>
