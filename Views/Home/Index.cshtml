@@ -1,8 +1,111 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero-section">
+    <div class="container hero-content">
+        <span class="hero-badge">DESCUBRE LO LOCAL</span>
+        <h1>Descubre lo mejor de tu <span class="hero-accent">distrito</span></h1>
+        <p>Conectamos el corazón de los negocios peruanos con la comunidad. Encuentra desde la mejor gastronomía hasta servicios especializados cerca de ti.</p>
+
+        <form class="hero-search" role="search" method="get" action="#">
+            <div class="hero-search-input">
+                <span class="icon">🔍</span>
+                <input type="search" name="q" placeholder="¿Qué estás buscando?" aria-label="Buscar" />
+            </div>
+            <div class="hero-search-input">
+                <span class="icon">📍</span>
+                <input type="text" name="district" placeholder="Distrito" aria-label="Distrito" />
+            </div>
+            <button type="submit" class="btn btn-search">Buscar →</button>
+        </form>
+    </div>
+</section>
+
+<section class="categories-section">
+    <div class="container">
+        <div class="categories-header">
+            <h2>Explora por categorías</h2>
+            <a class="link-view-all" href="#">Ver todas →</a>
+        </div>
+
+        <div class="category-chip-grid">
+            <a class="category-chip active" href="#">Todos</a>
+            <a class="category-chip" href="#">Restaurantes</a>
+            <a class="category-chip" href="#">Tiendas</a>
+            <a class="category-chip" href="#">Servicios</a>
+            <a class="category-chip" href="#">Salud</a>
+            <a class="category-chip" href="#">Educación</a>
+            <a class="category-chip" href="#">Belleza</a>
+        </div>
+    </div>
+</section>
+
+<section class="featured-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Negocios destacados</h2>
+            <p>Seleccionados por su calidad, atención y popularidad en la comunidad.</p>
+        </div>
+
+        <div class="featured-grid">
+            <article class="card featured-card">
+                <div class="image" style="background-image:url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80')"></div>
+                <div class="card-body">
+                    <span class="chip chip-restaurant">RESTAURANTE</span>
+                    <h3>La Picantéria de Surco</h3>
+                    <p class="meta">Santiago de Surco, Lima</p>
+                    <p class="status">Abierto hasta 23:00</p>
+                    <span class="rating">4.9</span>
+                </div>
+            </article>
+
+            <article class="card featured-card">
+                <div class="image" style="background-image:url('https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80')"></div>
+                <div class="card-body">
+                    <span class="chip chip-beauty">BELLEZA</span>
+                    <h3>Aura Wellness Center</h3>
+                    <p class="meta">Miraflores, Lima</p>
+                    <p class="status">Abierto hasta 20:00</p>
+                    <span class="rating">4.7</span>
+                </div>
+            </article>
+
+            <article class="card featured-card">
+                <div class="image" style="background-image:url('https://images.unsplash.com/photo-1594275917060-1c397a4a92a4?auto=format&fit=crop&w=1200&q=80')"></div>
+                <div class="card-body">
+                    <span class="chip chip-shop">TIENDAS</span>
+                    <h3>Concepto Textil</h3>
+                    <p class="meta">San Isidro, Lima</p>
+                    <p class="status">Abierto hasta 21:00</p>
+                    <span class="rating">4.8</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container cta-grid">
+        <div class="cta-left">
+            <h2>¿Tienes un negocio?<br>Hazlo crecer con nosotros.</h2>
+            <p>Únete a la red más grande de negocios locales en Perú y llega a miles de clientes potenciales en tu distrito hoy mismo.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Comenzar gratis</a>
+                <a href="#" class="btn btn-secondary">Saber más</a>
+            </div>
+        </div>
+        <div class="cta-right">
+            <div class="stats-card">
+                <div class="stats-title">Tus estadísticas</div>
+                <div class="stats-subtitle">Visibilidad este mes</div>
+                <div class="progress-wrap">
+                    <span class="progress-value">+1,240 clics</span>
+                    <span class="progress-percent">+24%</span>
+                </div>
+                <div class="progress-bar"><span style="width:74%"></span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
